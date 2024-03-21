@@ -3,6 +3,7 @@
 <head>
   <title>Good Taste</title>
   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .logo-container {
       text-align: center;
@@ -24,23 +25,45 @@
     
     .button-container {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 50px;
     }
 
     .button-container button {
-      margin: 10px;
-      heigh: 100px;
+      margin-bottom: 50px;
+      height: 100px;
       width: 500px;
       text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+      font-family: Gill Sans, sans-serif;
+    }
+
+    .navbar {
+      background-color: #000000; /* Change background color */
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #868686 !important; /* Change text color */
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #f8f9fa !important; /* Change text color on hover */
     }
 
   </style>
 </head>
 <body>
   <div class="logo-container">
-    <img src="https://56b77057-5525-4716-9e85-33f570e6beba-00-20so9xt2sg20s.picard.replit.dev/static/goodtaste.png" id="banner">
+    <img src="http://192.168.1.130:5000/static/goodtaste.png" id="banner">
   </div>
   <h1>RATE MUSIC WITH FRIENDS</h1>
   {% block content %}{% endblock %}
+
+  {% block about_section %}{% endblock %}
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

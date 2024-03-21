@@ -16,6 +16,14 @@ def login():
 def signup():
     return render_template('signup.html')
 
+@app.route("/rating")
+def rating():
+    return render_template('rating.html')
+
+@app.route('/stats')
+def stats():
+    return render_template('stats.html')
+
 print(__name__)
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug = True)
