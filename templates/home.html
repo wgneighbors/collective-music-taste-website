@@ -4,22 +4,43 @@
   <title>Good Taste</title>
   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <style>
-    /* CSS to center the logo */
     .logo-container {
       text-align: center;
-      margin-top: 20px; /* Adjust as needed */
+      margin-top: 20px;
     }
 
     .logo-container img {
-      width: 1000px; /* Adjust the width as needed */
-      height: auto;
+      width: 1000px;
+      hefont: family;    }
+    
+    h1 {
+      margin-top: 10px;
+      font-size: 40px;
+      font-family: Gill Sans, sans-serif;
+      color: rgb(150,150,150)
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .button-container button {
+      margin: 5px; /* optional: add some space around buttons */
     }
   </style>
 </head>
 <body>
   <div class="logo-container">
-    <img src="https://56b77057-5525-4716-9e85-33f570e6beba-00-20so9xt2sg20s.picard.replit.dev/static/goodtaste.png">
+    <img src="https://56b77057-5525-4716-9e85-33f570e6beba-00-20so9xt2sg20s.picard.replit.dev/static/goodtaste.png" id="banner">
   </div>
-  <h1 style="text-align: center;">Rate music with friends</h1>
+  <h1 style="text-align: center;">RATE MUSIC WITH FRIENDS</h1>
+  <div class = "button-container">
+    <a href ="login.html">
+      <button>LOGIN</button>
+    </a>
+    <br>
+    <a href ="signup.html">
+      <button>SIGN UP</button>
+    </div>
 </body>
 </html>
