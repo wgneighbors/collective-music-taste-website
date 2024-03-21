@@ -1,46 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Good Taste</title>
-  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-  <style>
-    .logo-container {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .logo-container img {
-      width: 1000px;
-      hefont: family;    }
-    
-    h1 {
-      margin-top: 10px;
-      font-size: 40px;
-      font-family: Gill Sans, sans-serif;
-      color: rgb(150,150,150)
-    }
-    .button-container {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .button-container button {
-      margin: 5px; /* optional: add some space around buttons */
-    }
-  </style>
-</head>
-<body>
-  <div class="logo-container">
-    <img src="https://56b77057-5525-4716-9e85-33f570e6beba-00-20so9xt2sg20s.picard.replit.dev/static/goodtaste.png" id="banner">
-  </div>
-  <h1 style="text-align: center;">RATE MUSIC WITH FRIENDS</h1>
-  <div class = "button-container">
-    <a href ="login.html">
+{% extends "base.html" %}
+{% block content %}
+<div class = "button-container">
+    <a href = "{{url_for('login')}}">
       <button>LOGIN</button>
     </a>
     <br>
-    <a href ="signup.html">
+    <a href ="{{url_for('signup')}}">
       <button>SIGN UP</button>
-    </div>
-</body>
-</html>
+    </a>
+</div>
+{% endblock %}

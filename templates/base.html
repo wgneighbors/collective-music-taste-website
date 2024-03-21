@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Good Taste</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <style>
+    .logo-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .logo-container img {
+      width: 1000px;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      margin-top: 10px;
+      font-size: 40px;
+      font-family: Gill Sans, sans-serif;
+      color: rgb(150,150,150);
+      text-align: center;
+    }
+    
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .button-container button {
+      margin: 10px;
+      heigh: 100px;
+      width: 500px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <img src="https://56b77057-5525-4716-9e85-33f570e6beba-00-20so9xt2sg20s.picard.replit.dev/static/goodtaste.png" id="banner">
+  </div>
+  <h1>RATE MUSIC WITH FRIENDS</h1>
+  {% block content %}{% endblock %}
+</body>
+</html>
