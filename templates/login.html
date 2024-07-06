@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="return">
-    <a href = "{{ url_for('home') }}">return</a> 
+    <a href = "{{ url_for('home') }}">Return to home.</a><br>
+    <a href="{{ url_for('signup') }}">Don't have an accoutnt? Sign up!</a>
 </div>
 {% endblock %}
